@@ -1,0 +1,64 @@
+/* estilo geral da pagina */
+body {
+    font-family: Arial;
+    background-color: rgb(231, 221, 221); /* cinza claro */
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* titulo do jogo */
+h1 {
+    color: rgb(6, 6, 181);
+}
+
+/* botao de reiniciar - deixei arredondado */
+button {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* div onde as cartas aparecem */
+#tabuleiro {
+    width: 380px;
+    margin: 20px auto; /* centraliza */
+}
+
+/* estilo de cada carta */
+.carta {
+    width: 80px;
+    height: 90px;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    line-height: 90px; /* centraliza o ? no meio */
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid darkblue;
+    cursor: pointer;
+}
+
+/* quando a carta ta virada */
+.carta.virada {
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+}
+
+/* quando acertou o par fica verde */
+.carta.acertou {
+    background-color: lightgreen;
+    border: 2px solid green;
+}
+
+/* mensagem de vitoria la embaixo */
+#msg-vitoria {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
